@@ -12,7 +12,7 @@ Get-CimInstance -class Win32_Product | Select-Object *
 Get-CimInstance -class Win32_Product | Where-Object {$_.Name -like "*VMW*"} | Invoke-CimMethod -MethodName Uninstall
 
 # Software installieren
-Get-CimInstance -class Win32_Product -MethodName Install -Arguments @{packageLocation_'Path .... Software'}
+Get-CimInstance -class Win32_Product -MethodName Install -Arguments @{packageLocation = 'Path .... Software'}
 
 # Update Software
-Get-CimInstance -class Win32_Product -MethodName Update -Arguments @{packageLocation_'Path .... Software'}
+Get-CimInstance -class Win32_Product -MethodName Update -Arguments @{packageLocation = 'Path .... Software'}
