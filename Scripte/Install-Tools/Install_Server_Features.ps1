@@ -1,3 +1,8 @@
+# Author: Rainer Pardon
+# Titel: 
+# Version: 1.0
+# Datum: 16.06.2026
+
 Import-Module ServerManager
 
 # Test ob Installation geht
