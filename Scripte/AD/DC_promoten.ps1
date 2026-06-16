@@ -1,3 +1,9 @@
+# Author: Rainer Pardon
+# Titel DC promoten
+# Version: 1.0
+# Datum: 16.06.2026
+
+
 $dsrmPassword = ConvertTo-SecureString "Phoebe_3Q" -AsPlainText -Force
 
 Import-Module ADDSDeployment
