@@ -1,3 +1,8 @@
+# Author: Rainer Pardon
+# Titel: Software Installation
+# Version: 1.0
+# Datum: 16.06.2026
+
 # Installierte Software anzeigen lassen
 Get-CimInstance -class Win32_Product
 
