@@ -3,8 +3,13 @@
 # Version: 1.0
 # Datum: 11.06.2026
 
+# Verfügbare RSAT Tools anzeigen
+Get-WindowsCapability -Name RSAT* -Online
 
-Add-WindowsFeature -Name "RSAT -AD-Powershell"
-Import-Module ActiveDirectory
+# Einzelne RSAT Tools installieren (z.B. Active Directory
+Add-WindowsCapability -Online -Name Rsat.ActiveDirectory.DS-LDS.Tools~~~~0.0.1.0
 
-(Get-Command -Module ActiveDirectory).Count
+
+# Alle RSAT Tools installieren
+Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability -Online
+
