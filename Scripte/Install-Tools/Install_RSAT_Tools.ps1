@@ -1,7 +1,7 @@
 # Author: Rainer Pardon
 # Titel Rsat-Tools installieren
-# Version: 1.0
-# Datum: 11.06.2026
+# Version: 1.01
+# Datum: 18.06.2026
 
 # Verfügbare RSAT Tools anzeigen
 Get-WindowsCapability -Name RSAT* -Online
