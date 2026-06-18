@@ -3,6 +3,9 @@
 # Version: 1.01
 # Datum: 18.06.2026
 
+# Falls eine Polixy Einstellung die Installation verhindert
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+
 # Verfügbare RSAT Tools anzeigen
 Get-WindowsCapability -Name RSAT* -Online
 
